@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Equals"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="="
+        app:layout_constraintStart_toEndOf="@+id/Addition"
+        app:layout_constraintTop_toBottomOf="@+id/Delete" />
+
+    <Button
+        android:id="@+id/NumPad1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/NumPad5"
+        app:layout_constraintEnd_toStartOf="@+id/NumPad5" />
+
+    <Button
+        android:id="@+id/NumPad2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="272dp"
+        android:text="2"
+        app:layout_constraintEnd_toEndOf="@+id/NumPad5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/NumPad5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/NumPad3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/NumPad5"
+        app:layout_constraintStart_toEndOf="@+id/NumPad5" />
+
+    <Button
+        android:id="@+id/NumPad4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="4"
+        app:layout_constraintBottom_toBottomOf="@+id/NumPad5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/NumPad5" />
+
+    <Button
+        android:id="@+id/NumPad5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/NumPad8"
+        app:layout_constraintEnd_toStartOf="@+id/NumPad6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/NumPad4"
+        app:layout_constraintTop_toBottomOf="@+id/NumPad2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/NumPad6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="200dp"
+        android:text="6"
+        app:layout_constraintBottom_toBottomOf="@+id/NumPad5"
+        app:layout_constraintStart_toStartOf="@+id/NumPad4"
+        app:layout_constraintTop_toTopOf="@+id/NumPad5" />
+
+    <Button
+        android:id="@+id/NumPad7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="7"
+        app:layout_constraintEnd_toStartOf="@+id/NumPad5"
+        app:layout_constraintTop_toBottomOf="@+id/NumPad5" />
+
+    <Button
+        android:id="@+id/NumPad8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="99dp"
+        android:text="8"
+        app:layout_constraintEnd_toEndOf="@+id/NumPad5"
+        app:layout_constraintStart_toStartOf="@+id/NumPad5"
+        app:layout_constraintTop_toBottomOf="@+id/NumPad2" />
+
+    <Button
+        android:id="@+id/NumPad9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="9"
+        app:layout_constraintStart_toEndOf="@+id/NumPad5"
+        app:layout_constraintTop_toBottomOf="@+id/NumPad5" />
+
+    <Button
+        android:id="@+id/NumPad0"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="@+id/NumPad9"
+        app:layout_constraintStart_toStartOf="@+id/NumPad7"
+        app:layout_constraintTop_toBottomOf="@+id/NumPad8" />
+
+    <Button
+        android:id="@+id/Subtraction"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/NumPad0"
+        app:layout_constraintTop_toBottomOf="@+id/NumPad7" />
+
+    <Button
+        android:id="@+id/Addition"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="+"
+        app:layout_constraintStart_toEndOf="@+id/NumPad0"
+        app:layout_constraintTop_toBottomOf="@+id/NumPad9" />
+
+    <Button
+        android:id="@+id/Division"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="÷"
+        app:layout_constraintBottom_toBottomOf="@+id/NumPad3"
+        app:layout_constraintStart_toEndOf="@+id/NumPad3" />
+
+    <Button
+        android:id="@+id/Multiplication"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="x"
+        app:layout_constraintStart_toEndOf="@+id/NumPad6"
+        app:layout_constraintTop_toBottomOf="@+id/Division" />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="C"
+        app:layout_constraintStart_toEndOf="@+id/NumPad9"
+        app:layout_constraintTop_toBottomOf="@+id/Multiplication" />
+
+    <TextView
+        android:id="@+id/Output"
+        android:layout_width="376dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="112dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/NumPad3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
